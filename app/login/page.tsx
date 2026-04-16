@@ -1,8 +1,8 @@
 "use client";
 
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -21,6 +21,12 @@ const LoginPage = () => {
       router.push("/");
     }
   };
+  useEffect(()=>{
+    const {data}=useSession();
+    if(data){
+      router.push("/");
+    }
+  },[]);
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 px-4">
       <div className="w-full max-w-md bg-gray-900/80 backdrop-blur-xl border border-gray-700 rounded-2xl shadow-2xl p-8">
