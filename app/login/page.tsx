@@ -21,8 +21,8 @@ const LoginPage = () => {
       router.push("/");
     }
   };
+  const {data}=useSession();
   useEffect(()=>{
-    const {data}=useSession();
     if(data){
       router.push("/");
     }
