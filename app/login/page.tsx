@@ -26,7 +26,7 @@ const LoginPage = () => {
     if(data){
       router.push("/");
     }
-  },[]);
+  },[data]);
   return (
     <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 px-4">
       <div className="w-full max-w-md bg-gray-900/80 backdrop-blur-xl border border-gray-700 rounded-2xl shadow-2xl p-8">
