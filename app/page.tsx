@@ -162,7 +162,7 @@ export default function Home() {
                   className="bg-slate-800/60 backdrop-blur-md rounded-2xl p-3 shadow-md hover:shadow-xl transition duration-300 hover:scale-[1.03]"
                 >
                   <Video
-                    urlEndpoint="https://ik.imagekit.io/1bfhhmypj"
+                    urlEndpoint="https://ik.imagekit.io/qlzxoilfqt"
                     src={v.videoUrl}
                     controls={v.controls ?? true}
                     width={500}
