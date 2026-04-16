@@ -125,7 +125,7 @@ export default function Home() {
                 >
                   Get Started
                 </a>
-
+                
                 <a
                   href="/login"
                   className="w-full text-center border border-gray-600 hover:bg-gray-800 transition px-6 py-3 rounded-xl text-lg hover:scale-105 active:scale-95"

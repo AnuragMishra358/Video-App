@@ -65,6 +65,18 @@ const LoginPage = () => {
           <div className="grow h-px bg-gray-700"></div>
         </div>
 
+        <button 
+        onClick={()=>signIn("github")}
+        className="w-full bg-indigo-600 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700 active:scale-[0.98] transition duration-300"
+        >SignIn with Github</button>
+
+         {/* Divider */}
+        <div className="flex items-center my-6">
+          <div className="grow h-px bg-gray-700"></div>
+          <span className="px-3 text-gray-400 text-sm">OR</span>
+          <div className="grow h-px bg-gray-700"></div>
+        </div>
+
         {/* Register Link */}
         <p className="text-center text-gray-400 text-sm">
           Don't have an account?{" "}
